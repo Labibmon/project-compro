@@ -18,5 +18,4 @@ jobs:
           node-version: 18
           cache: 'yarn'
       - working-directory: ./frontend
-        run: yarn install
-        run: yarn build
+        run: yarn install && yarn build
