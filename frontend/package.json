@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "postinstall": "husky install",
     "check-format": "prettier --check \"**/*.{ts,tsx}\"",
-    "format-code": "prettier --config --write \"**/*.{ts,tsx}\""
+    "format-code": "prettier --config --write \"**/*.{ts,tsx}\"",
+    "prepare": "husky"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -36,9 +37,6 @@
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
       "eslint --fix",
-      "prettier --config ./.prettierrc.js --write"
-    ],
-    "**/*.{css,scss,md,html,json}": [
       "prettier --config ./.prettierrc.js --write"
     ]
   }
