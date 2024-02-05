@@ -10,6 +10,10 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh'],
   rules: {
+    'react/display-name': 'off',
+    'react-hooks/exhaustive-deps': 'off',
+    'import/no-anonymous-default-export': 'off',
+    'no-console': 'error',
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
